@@ -183,6 +183,7 @@ body {
 .appointment__content {
     padding: 0 55px;
     position: relative;
+    flex: 1 1 585px;
 }
 
 .appointment__content::before {
