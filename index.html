@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson - 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="main__appointment appointment">
+                <div class="appointment__container">
+                    <div class="appointment__row">
+                        <div class="appointment__content">
+                            <form action="#" class="appointment__form">
+                                <h1 class="appointment__title">Make an appointment</h1>
+                                <div class="appointment__body">
+                                    <div class="appointment__item">
+                                        <input required tabindex="1" placeholder="Name" name="username" type="text"
+                                            class="appointment__input">
+                                    </div>
+                                    <div class="appointment__item">
+                                        <input required tabindex="2" placeholder="Email" name="user-email" type="email"
+                                            class="appointment__input">
+                                    </div>
+                                    <div class="appointment__item">
+                                        <input required tabindex="3" placeholder="Phone Number" name="user-tel"
+                                            type="tel" class="appointment__input">
+                                    </div>
+                                    <div class="appointment__item">
+                                        <select tabindex="4" class="appointment__select" name="select">
+                                            <option class="appointment__option" value="select-1">Select Serivce</option>
+                                            <option class="appointment__option" value="select-2">Serivce</option>
+                                            <option class="appointment__option" value="select-3">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <textarea class="appointment__textarea"
+                                    placeholder="Tell us about your puppers include his/her name" tabindex="5"
+                                    name="text"></textarea>
+                                <button type="submit" tabindex="6" class="appointment__button">Make an
+                                    appointment</button>
+                            </form>
+                        </div>
+                        <div class="appointment__customers-block">
+                            <p class="appointment__suptext">Maxime placeat facere possimus omnis </p>
+                            <p class="appointment__number">5,700+</p>
+                            <p class="appointment__subtext">customers served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__registred registred">
+                <div class="registred__container">
+                    <form action="#" class="registred__form">
+                        <h2 class="registred__title">Registered Customers</h2>
+                        <p class="registred__text">If you have an account, sign in with your email address.</p>
+                        <div class="registred__item">
+                            <div class="registred__content">
+                                <label for="email" class="registred__label">Email</label>
+                                <span class="registred__span">*</span>
+                            </div>
+                            <input id="email" required tabindex="7" placeholder="Your Name" name="username" type="email"
+                                class="registred__input">
+                        </div>
+                        <div class="registred__pass-item">
+                            <div class="registred__content">
+                                <label for="password" class="registred__label">Password</label>
+                                <span class="registred__span">*</span>
+                            </div>
+                            <input id="password" required tabindex="8" placeholder="Your Name" name="userpass"
+                                type="password" class="registred__input">
+                        </div>
+                        <div class="registred__wrap">
+                            <button type="submit" tabindex="9" class="registred__button">Sign In</button>
+                            <a href="#" class="registred__link">Forgot Your Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main__summary summary">
+                <div class="summary__container">
+                    <form action="#" class="summary__form">
+                        <h2 class="summary__title">Summary</h2>
+                        <p class="summary__text">Estimate Shipping and Tax</p>
+                        <p class="summary__subtext">Enter your destination to get a shipping estimate.</p>
+                        <div class="summary__item">
+                            <label class="summary__label">Country</label>
+                            <select tabindex="10" name="country" class="summary__select">
+                                <option value="australia" class="summary__option">Australia</option>
+                                <option value="china" class="summary__option">China</option>
+                                <option value="uk" class="summary__option">UK</option>
+                            </select>
+                        </div>
+                        <div class="summary__item">
+                            <label for="state" class="summary__label">State/Province</label>
+                            <input required tabindex="11" name="state" id="state" type="text" class="summary__input">
+                        </div>
+                        <div class="summary__zip-wrap">
+                            <label for="zip" class="summary__label">Zip/Postal Code</label>
+                            <input required tabindex="12" name="zip" id="zip" type="text" class="summary__input">
+                        </div>
+                        <div class="summary__box">
+                            <div class="summary__block">
+                                <label for="standard" class="summary__label">Standard Rate</label>
+                                <div class="summary__item-box">
+                                    <input tabindex="13" id="standard" class="summary__radio" name="pickup"
+                                        value="standard" type="radio">
+                                    <label for="standard" class="summary__switcher"></label>
+                                    <span class="summary__span">Price may vary depending on the item/destination. Shop
+                                        Staff
+                                        will contact you. $21.00</span>
+                                </div>
+                            </div>
+                            <div class="summary__block">
+                                <label for="store" class="summary__label">Pickup from store</label>
+                                <div class="summary__item-box">
+                                    <input tabindex="14" id="store" class="summary__radio" name="pickup" value="store"
+                                        type="radio">
+                                    <label for="store" class="summary__switcher"></label>
+                                    <span class="summary__span">1234 Street Adress City Address, 1234 $0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="summary__subtitle">Apply Discount Code</h2>
+                        <div class="summary__code-wrap">
+                            <label for="code" class="summary__label">Enter discount code</label>
+                            <input placeholder="Enter Discount code" tabindex="15" name="discount-code" id="code"
+                                type="text" class="summary__input">
+                        </div>
+                        <button tabindex="16" type="submit" class="summary__button">Apply Discount</button>
+                        <div class="summary__decor"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
